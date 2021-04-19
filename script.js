@@ -8,9 +8,9 @@ let randomNumber = (val) =>
 
 let wisdom = 
 {
-    name: ["Pieter","Sarie"],
-    surname: ["Pretorius", "Roux"],
-    kleur: ["blank", "bruin", "swart"]
+    name: ["Silly","Crazy","Insane","Nasty"],
+    surname: ["Dog", "Pig","Hippo"],
+    kleur: ["Lazy", "Fat", "Stupid"]
 }
 
 let randomPerson = (arrayObj) =>
@@ -21,7 +21,7 @@ let randomPerson = (arrayObj) =>
         let option = randomNumber(arrayObj[element].length);
         saying.push(arrayObj[element][option]);
     }
-    console.log(`Your name is ${saying[0]} and your surname is ${saying[1]} and your ethnicity is ${saying[2]}`)
+    console.log(`You are a ${saying[0]} ${saying[1]} and your best trait is being ${saying[2]}`)
 }
 
 randomPerson(wisdom);
